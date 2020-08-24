@@ -1,0 +1,34 @@
+
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+form {
+  float: left;
+}
+
+a {
+  color: #00B7FF;
+  display: block;
+  margin-bottom: 10px;
+}
+img {
+  display: block;
+  width: 50%;
+  margin-left: 2rem;
+  float: left;
+}
+li {
+  list-style: none;
+}
+button {
+  display: block;
+}
+@media (max-width: 776px){
+  img {
+    margin-top: 1rem;
+    width: 100%;
+
+  }
+ 
+}

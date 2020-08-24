@@ -1,0 +1,15 @@
+<%- include('header'); %> 
+        <form action='/upload' method='post' encType="multipart/form-data">
+            <input id="fileElem"  type="file" name="sampleFile" style="display:none" />
+            <a href="#" id="fileSelect" role="button">Select some files</a>
+            <button type='submit' class="btn btn-outline-info">Upload!</button>
+        </form>
+        <div id="fileList">
+        </div>
+        <!-- cropper -->
+        <script src="/node_modules/cropperjs/dist/cropper.js"></script>
+        <!-- my js -->
+        <script src="/javascripts/file.js"> </script>
+    </body>
+
+</html>
