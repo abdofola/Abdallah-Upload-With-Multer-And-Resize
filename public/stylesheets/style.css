@@ -28,7 +28,13 @@ button {
   img {
     margin-top: 1rem;
     width: 100%;
-
+  }
+  form {
+    width: 100%;
+  }
+  button {
+    display: block;
+    width: 100%;
   }
  
 }
