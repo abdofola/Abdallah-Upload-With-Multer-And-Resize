@@ -1,10 +1,10 @@
-
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
+
 form {
-  float: left;
+  /* float: left; */
 }
 
 a {
@@ -12,29 +12,49 @@ a {
   display: block;
   margin-bottom: 10px;
 }
+
 img {
   display: block;
-  width: 50%;
-  margin-left: 2rem;
-  float: left;
+  width: 100%;
+  /* margin-left: 2rem; */
+  /* float: left; */
 }
+.edited {
+  width: 50%;
+  margin: auto;
+}
+
 li {
   list-style: none;
 }
+
+label {
+  display: block;
+}
+
+input[type="text"] {
+  border:none;
+  background: transparent;
+  outline: 0;
+  margin-bottom: 3px;
+}
+
 button {
   display: block;
 }
-@media (max-width: 776px){
+
+@media (max-width: 776px) {
   img {
     margin-top: 1rem;
     width: 100%;
   }
+
   form {
     width: 100%;
   }
+
   button {
     display: block;
-    width: 100%;
+    width: 80%;
   }
- 
 }

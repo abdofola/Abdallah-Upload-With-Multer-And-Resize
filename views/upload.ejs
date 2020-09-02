@@ -1,15 +1,43 @@
-<%- include('header'); %> 
-        <form action='/upload' method='post' encType="multipart/form-data">
-            <input id="fileElem"  type="file" name="sampleFile" style="display:none" />
-            <a href="#" id="fileSelect" role="button">Select some files</a>
-            <button type='submit' class="btn btn-outline-info">Upload!</button>
-        </form>
-        <div id="fileList">
-        </div>
-        <!-- cropper -->
-        <script src="/node_modules/cropperjs/dist/cropper.js"></script>
-        <!-- my js -->
-        <script src="/javascripts/file.js"> </script>
-    </body>
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Upload</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- cropper css -->
+    <link href="cropperjs/dist/cropper.min.css" rel="stylesheet">
+    <!-- Bootstrap CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- custom css -->
+    <link rel='stylesheet' href="/stylesheets/style.css" />
+  </head>
+
+  <body>
+
+    <input id="fileElem" type="file" name="sampleFile" style="display:none" />
+    <a href="#" id="fileSelect" role="button">Select some files</a>
+    <div class="prev">
+    </div>
+    <!-- Button to upload & crop  -->
+    <button class="btn btn-outline-info">Upload!</button>
+    <div id="prev" name="div"></div>
+    <br>
+    <div id="fileList">
+      <p>No files selected!</p>
+    </div>
+
+    <!-- cropper -->
+    <script src="cropperjs/dist/cropper.js"></script>
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <!-- axois -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- my js -->
+    <script src="/javascripts/file.js"></script>
+  </body>
 
 </html>
